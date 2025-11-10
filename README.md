@@ -15,29 +15,23 @@ bridge-monitoring/
 ├── metadata/                → Includes bridge metadata file  
 └── checkpoints/             → Spark checkpoints (ignored in Git)
 
-
-**Requirements**
-
-Python 3.8 or higher
-
+⚙️ Requirements
+Python 3.8+
 PySpark 3.x
-
-Pandas, Matplotlib, Seaborn
-
+Pandas
+Matplotlib
+Seaborn
 Jupyter Notebook
 
-**How to Run**
-
+🚀 How to Run
+1️⃣ Start Data Generator
 python data_generator/data_generator.py
 
-**Run ETL Pipelines**
-
+2️⃣ Run ETL Pipelines
 python pipelines/bronze_ingest.py
 python pipelines/silver_enrichment.py
 python pipelines/gold_aggregation.py
 
-**View Results**
-
+3️⃣ View Results
 jupyter notebook notebooks/demo.ipynb
-
 
