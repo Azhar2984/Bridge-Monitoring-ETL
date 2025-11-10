@@ -14,24 +14,27 @@ bridge-monitoring/
 ├── notebooks/               → Jupyter notebook for demo and visualization  
 ├── metadata/                → Includes bridge metadata file  
 └── checkpoints/             → Spark checkpoints (ignored in Git)
-
 ⚙️ Requirements
+bash
+Copy code
 Python 3.8+
 PySpark 3.x
 Pandas
 Matplotlib
 Seaborn
 Jupyter Notebook
-
 🚀 How to Run
 1️⃣ Start Data Generator
+bash
+Copy code
 python data_generator/data_generator.py
-
 2️⃣ Run ETL Pipelines
+bash
+Copy code
 python pipelines/bronze_ingest.py
 python pipelines/silver_enrichment.py
 python pipelines/gold_aggregation.py
-
 3️⃣ View Results
+bash
+Copy code
 jupyter notebook notebooks/demo.ipynb
-
