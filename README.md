@@ -24,3 +24,14 @@ Jupyter Notebook
 
 ```bash
 python data_generator/data_generator.py
+
+Run ETL Pipelines
+```bash
+python pipelines/bronze_ingest.py
+python pipelines/silver_enrichment.py
+python pipelines/gold_aggregation.py
+
+
+3️⃣ View Results
+```bash
+jupyter notebook notebooks/demo.ipynb
